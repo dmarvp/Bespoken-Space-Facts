@@ -1,25 +1,25 @@
 module.exports = {
   translation: {
-    "SKILL_NAME": "Space Facts",
-    "GET_FACT_MESSAGE": "Here\"s your fact: ",
-    "HELP_MESSAGE": "You can say tell me a space fact, or, you can say exit... What can I help you with?",
-    "HELP_REPROMPT": "What can I help you with?",
-    "STOP_MESSAGE": "Goodbye!",
-    "REPROMPT": " Would you like to hear another fact?",
+    "SKILL_NAME": "Datos del Espacio",
+    "GET_FACT_MESSAGE": "Aquí va tu dato: ",
+    "HELP_MESSAGE": "Puedes decir dame un dato del espacio o puedes decir salir... cómo puedo ayudarte?",
+    "HELP_REPROMPT": "Cómo puedo ayudarte?",
+    "STOP_MESSAGE": "Hasta Luego!",
+    "REPROMPT": " Te gustaría escuchar otro dato?",
     "data": [
-      "A year on Mercury is just 88 days long.",
-      "Despite being farther from the Sun, Venus experiences higher temperatures than Mercury.",
-      "Venus rotates counter-clockwise, possibly because of a collision in the past with an asteroid.",
-      "On Mars, the Sun appears about half the size as it does on Earth.",
-      "Earth is the only planet not named after a god.",
-      "Jupiter has the shortest day of all the planets.",
-      "The Milky Way galaxy will collide with the Andromeda Galaxy in about 5 billion years.",
-      "The Sun contains 99.86% of the mass in the Solar System.",
-      "The Sun is an almost perfect sphere.",
-      "A total solar eclipse can happen once every 1 to 2 years. This makes them a rare event.",
-      "Saturn radiates two and a half times more energy into space than it receives from the sun.",
-      "The temperature inside the Sun can reach 15 million degrees Celsius.",
-      "The Moon is moving approximately 3.8 cm away from our planet every year."
+      "Un año en Mercurio dura solo 88 días.",
+      "A pesar de estar más lejos del Sol, Venus tiene mayores temperaturas que Mercurio.",
+      "Venus rota en sentido contrario al reloj, posiblemente por una colisión con un asteroide en el pasado.",
+      "En Marte, el Sol parece ser la mitad de grande de lo que se ve en la Tierra.",
+      "La Tierra es el único planeta que no tiene nombre de un Dios.",
+      "Jupiter tiene el día más corto de todos los planetas.",
+      "La Vía Láctea colisionará con la galaxia Andromeda dentro de 5 mil millones de años aproximadamente.",
+      "El Sol contiene 99.86% de la masa presente en el Sistema Solar.",
+      "El Sol es una esfera casi perfecta.",
+      "Un eclipse total de sol puede pasar una vez cada uno o dos años. Esto los convierte en eventos raros.",
+      "Saturno irradia dos veces y media más energía en el espacio que la que recibe del Sol.",
+      "La temperatura dentro del Sol puede llegar a 15 millones de grados Celsius.",
+      "La Luna se aleja de nuestro planeta 3.8 centímetros cada año."
     ]
   }
 }
