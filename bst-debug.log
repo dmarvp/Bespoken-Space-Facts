@@ -1,0 +1,12 @@
+2019-05-10T15:29:43.395Z error: bst-test            Error using bst-test on Node: v9.3.0
+2019-05-10T15:29:43.397Z error: bst-test            Error: Locale must be defined either in the testing.json or the test file itself under the config element
+    at new FrameworkError (/usr/local/lib/node_modules/bespoken-tools/node_modules/skill-testing-ml/dist/lib/util/FrameworkError.js:18:122)
+    at TestRunner.<anonymous> (/usr/local/lib/node_modules/bespoken-tools/node_modules/skill-testing-ml/dist/lib/runner/TestRunner.js:98:27)
+    at Generator.next (<anonymous>)
+    at step (/usr/local/lib/node_modules/bespoken-tools/node_modules/skill-testing-ml/dist/lib/runner/TestRunner.js:3:191)
+    at /usr/local/lib/node_modules/bespoken-tools/node_modules/skill-testing-ml/dist/lib/runner/TestRunner.js:3:437
+    at new Promise (<anonymous>)
+    at TestRunner.<anonymous> (/usr/local/lib/node_modules/bespoken-tools/node_modules/skill-testing-ml/dist/lib/runner/TestRunner.js:3:99)
+    at TestRunner.runSuiteForLocale (/usr/local/lib/node_modules/bespoken-tools/node_modules/skill-testing-ml/dist/lib/runner/TestRunner.js:173:30)
+    at TestRunner.<anonymous> (/usr/local/lib/node_modules/bespoken-tools/node_modules/skill-testing-ml/dist/lib/runner/TestRunner.js:83:39)
+    at Generator.next (<anonymous>)

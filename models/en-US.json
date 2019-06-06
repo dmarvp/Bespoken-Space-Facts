@@ -1,0 +1,120 @@
+{
+  "interactionModel": {
+      "languageModel": {
+          "invocationName": "space facts",
+          "intents": [
+              {
+                  "name": "AMAZON.CancelIntent",
+                  "samples": []
+              },
+              {
+                  "name": "AMAZON.HelpIntent",
+                  "samples": []
+              },
+              {
+                  "name": "AMAZON.StopIntent",
+                  "samples": []
+              },
+              {
+                  "name": "AMAZON.NavigateHomeIntent",
+                  "samples": []
+              },
+              {
+                  "name": "AMAZON.FallbackIntent",
+                  "samples": []
+              },
+              {
+                  "name": "AMAZON.YesIntent",
+                  "samples": []
+              },
+              {
+                  "name": "AMAZON.NoIntent",
+                  "samples": []
+              },
+              {
+                  "name": "GetNewFactIntent",
+                  "slots": [
+                      {
+                          "name": "solarSystemMember",
+                          "type": "SOLAR_SYSTEM_MEMBER"
+                      }
+                  ],
+                  "samples": [
+                      "a fact about the {solarSystemMember}",
+                      "a fact about {solarSystemMember}",
+                      "tell me a fact about the {solarSystemMember}",
+                      "tell me a fact about {solarSystemMember}",
+                      "tell me about {solarSystemMember}",
+                      "tell me about the {solarSystemMember}",
+                      "a fact",
+                      "a space fact",
+                      "tell me a fact",
+                      "tell me a space fact",
+                      "give me a fact",
+                      "give me a space fact",
+                      "tell me trivia",
+                      "tell me a space trivia",
+                      "give me trivia",
+                      "give me a space trivia",
+                      "give me some information",
+                      "give me some space information",
+                      "tell me something",
+                      "give me something"
+                  ]
+              }
+          ],
+          "types": [
+              {
+                  "name": "SOLAR_SYSTEM_MEMBER",
+                  "values": [
+                      {
+                          "name": {
+                              "value": "Neptune"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Uranus"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Saturn"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Jupiter"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Mars"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Venus"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Earth"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Moon"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Sun"
+                          }
+                      }
+                  ]
+              }
+          ]
+      }
+  }
+}

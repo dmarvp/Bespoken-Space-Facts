@@ -1,0 +1,33 @@
+---
+configuration:
+    locales: en-US
+
+---
+- test: Launch the space facts skill
+- open space facts: "Here's your fact *"
+
+---
+- test: Launch and ask for help
+- open space facts
+- help: "What can I help you with"
+
+---
+- test: Launch and ask for a fact about Mars
+- ask space facts to tell me a fact about Mars: Mars
+
+---
+- test: Launch the space facts skill and test multiple responses
+- open space facts:
+  - prompt:
+    - Earth
+    - Venus
+    - Mars
+    - Sun
+    - Moon
+    
+
+---
+- test: Launch card title and reprompt
+- open space facts:
+  - cardTitle: Space Facts
+  - response.reprompt.outputSpeech.ssml: "Would you like to hear another fact?"
