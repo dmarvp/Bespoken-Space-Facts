@@ -1,0 +1,114 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "weltraum fakten",
+            "intents": [{
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.YesIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NoIntent",
+                    "samples": []
+                },
+                {
+                    "name": "GetNewFactIntent",
+                    "slots": [{
+                        "name": "solarSystemMember",
+                        "type": "SOLAR_SYSTEM_MEMBER"
+                    }],
+                    "samples": [
+                        "eine Tatsache über das {solarSystemMember}",
+                        "eine Tatsache über {solarSystemMember}",
+                        "Erzähl mir eine Tatsache über das {solarSystemMember}",
+                        "Erzähl mir eine Tatsache über {solarSystemMember}",
+                        "Erzähl mir von {solarSystemMember}",
+                        "Erzähl mir von dem {solarSystemMember}",
+                        "eine Tatsache",
+                        "ein Raum Fakt",
+                        "Sag mir eine Tatsache",
+                        "Erzähl mir ein Leerzeichen",
+                        "gib mir eine Tatsache",
+                        "gib mir ein Leerzeichen Tatsache",
+                        "Erzähl mir Trivia",
+                        "Erzähl mir ein Weltraum-Trivia",
+                        "gib mir Kleinigkeiten",
+                        "gib mir ein Leerzeichen Trivia",
+                        "gib mir ein paar informationen",
+                        "gib mir ein paar Rauminformationen",
+                        "erzähle mir etwas",
+                        "Gib mir etwas"
+                    ]
+                }
+            ],
+            "types": [{
+                "name": "SOLAR_SYSTEM_MEMBER",
+                "values": [{
+                        "name": {
+                            "value": "Neptun"
+                        }
+                    },
+                    {
+                        "name": {
+                            "value": "Uranus"
+                        }
+                    },
+                    {
+                        "name": {
+                            "value": "Saturn"
+                        }
+                    },
+                    {
+                        "name": {
+                            "value": "Jupiter"
+                        }
+                    },
+                    {
+                        "name": {
+                            "value": "Mars"
+                        }
+                    },
+                    {
+                        "name": {
+                            "value": "Venus"
+                        }
+                    },
+                    {
+                        "name": {
+                            "value": "Erde"
+                        }
+                    },
+                    {
+                        "name": {
+                            "value": "Mond"
+                        }
+                    },
+                    {
+                        "name": {
+                            "value": "Sonne"
+                        }
+                    }
+                ]
+            }]
+        }
+    }
+}

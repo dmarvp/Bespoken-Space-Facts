@@ -1,0 +1,112 @@
+{
+  "interactionModel": {
+      "languageModel": {
+          "invocationName": "datos del espacio",
+          "intents": [
+              {
+                  "name": "AMAZON.CancelIntent",
+                  "samples": []
+              },
+              {
+                  "name": "AMAZON.HelpIntent",
+                  "samples": []
+              },
+              {
+                  "name": "AMAZON.StopIntent",
+                  "samples": []
+              },
+              {
+                  "name": "AMAZON.NavigateHomeIntent",
+                  "samples": []
+              },
+              {
+                  "name": "AMAZON.YesIntent",
+                  "samples": []
+              },
+              {
+                  "name": "AMAZON.NoIntent",
+                  "samples": []
+              },
+              {
+                  "name": "GetNewFactIntent",
+                  "slots": [
+                      {
+                          "name": "solarSystemMember",
+                          "type": "SOLAR_SYSTEM_MEMBER"
+                      }
+                  ],
+                  "samples": [
+                      "un dato acerca de {solarSystemMember}",
+                      "un dato sobre {solarSystemMember}",
+                      "dime un dato sobre {solarSystemMember}",
+                      "dime un dato de {solarSystemMember}",
+                      "cuéntame sobre {solarSystemMember}",
+                      "dime un dato de el {solarSystemMember}",
+                      "cuéntame sobre el {solarSystemMember}",
+                      "dime un dato de la {solarSystemMember}",
+                      "cuéntame sobre la {solarSystemMember}",
+                      "cuéntame de {solarSystemMember}",
+                      "un dato",
+                      "un dato del espacio",
+                      "dame un dato",
+                      "dame un dato del espacio",
+                      "cuéntame algo",
+                      "dame algo"
+                  ]
+              }
+          ],
+          "types": [
+              {
+                  "name": "SOLAR_SYSTEM_MEMBER",
+                  "values": [
+                      {
+                          "name": {
+                              "value": "Neptuno"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Urano"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Saturno"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Jupiter"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Marte"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Venus"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Tierra"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Luna"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Sol"
+                          }
+                      }
+                  ]
+              }
+          ]
+      }
+  }
+}

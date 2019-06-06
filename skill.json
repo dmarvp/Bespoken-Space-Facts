@@ -6,6 +6,16 @@
           "examplePhrases": [],
           "keywords": [],
           "name": "Space Facts"
+        },
+        "es-ES": {
+          "examplePhrases": [],
+          "keywords": [],
+          "name": "Datos del Espacio"
+        },
+        "de-DE": {
+          "examplePhrases": [],
+          "keywords": [],
+          "name": "Weltraum-Fakten"
         }
       },
       "isAvailableWorldwide": true,
