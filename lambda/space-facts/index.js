@@ -24,15 +24,15 @@ const GetNewFactHandler = {
 
     const fact = isSlotFullfilled(handlerInput) ?
       getSpecificFact(handlerInput) :
-      getRandomFact(data);
+      getRandomFact(requestAttributes.t('data'));
 
     const speechOutput = requestAttributes.t('GET_FACT_MESSAGE') +
       fact + requestAttributes.t('REPROMPT');
 
     return handlerInput.responseBuilder
       .speak(speechOutput)
-      .withSimpleCard(SKILL_NAME, fact)
-      .reprompt(REPROMPT)
+      .withSimpleCard(requestAttributes.t('SKILL_NAME'), fact)
+      .reprompt(requestAttributes.t('REPROMPT'))
       .getResponse();
   },
 };
@@ -44,9 +44,10 @@ const HelpHandler = {
       request.intent.name === 'AMAZON.HelpIntent';
   },
   handle(handlerInput) {
+    const requestAttributes = handlerInput.attributesManager.getRequestAttributes();
     return handlerInput.responseBuilder
-      .speak(HELP_MESSAGE)
-      .reprompt(HELP_REPROMPT)
+      .speak(requestAttributes.t('HELP_MESSAGE'))
+      .reprompt(requestAttributes.t('HELP_REPROMPT'))
       .getResponse();
   },
 };
@@ -60,8 +61,9 @@ const ExitHandler = {
         request.intent.name === 'AMAZON.NoIntent');
   },
   handle(handlerInput) {
+    const requestAttributes = handlerInput.attributesManager.getRequestAttributes();
     return handlerInput.responseBuilder
-      .speak(STOP_MESSAGE)
+      .speak(requestAttributes.t('STOP_MESSAGE'))
       .getResponse();
   },
 };
@@ -73,7 +75,6 @@ const SessionEndedRequestHandler = {
   },
   handle(handlerInput) {
     console.log(`Session ended with reason: ${handlerInput.requestEnvelope.request.reason}`);
-
     return handlerInput.responseBuilder.getResponse();
   },
 };
@@ -83,11 +84,11 @@ const ErrorHandler = {
     return true;
   },
   handle(handlerInput, error) {
+    const requestAttributes = handlerInput.attributesManager.getRequestAttributes();
     console.log(`Error handled: ${error.message}`);
-
     return handlerInput.responseBuilder
-      .speak('Sorry, an error occurred.')
-      .reprompt('Sorry, an error occurred.')
+      .speak(requestAttributes.t('ERROR_MESSAGE'))
+      .reprompt(requestAttributes.t('ERROR_MESSAGE'))
       .getResponse();
   },
 };
@@ -100,7 +101,8 @@ const isSlotFullfilled = function (handlerInput) {
 }
 
 const getSpecificFact = function (handlerInput) {
-  const factArr = data;
+  const requestAttributes = handlerInput.attributesManager.getRequestAttributes();
+  const factArr = requestAttributes.t('data');
   const solarSystemMember = handlerInput.requestEnvelope.request.intent.slots.solarSystemMember.value;
   const filteredFacts = factArr.filter((element) => {
     return element.toLowerCase().indexOf(solarSystemMember.toLowerCase()) >= 0;
@@ -135,11 +137,7 @@ const LocalizationInterceptor = {
         sprintf: values
       });
 
-      if (Array.isArray(value)) {
-        return value[Math.floor(Math.random() * value.length)];
-      } else {
-        return value;
-      }
+      return value;
     }
 
     const attributes = handlerInput.attributesManager.getRequestAttributes();
@@ -149,28 +147,28 @@ const LocalizationInterceptor = {
   },
 };
 
-const SKILL_NAME = 'Space Facts';
-const GET_FACT_MESSAGE = 'Here\'s your fact: ';
-const HELP_MESSAGE = 'You can say tell me a space fact, or, you can say exit... What can I help you with?';
-const HELP_REPROMPT = 'What can I help you with?';
-const STOP_MESSAGE = 'Goodbye!';
-const REPROMPT = ' Would you like to hear another fact?';
+// const SKILL_NAME = 'Space Facts';
+// const GET_FACT_MESSAGE = 'Here\'s your fact: ';
+// const HELP_MESSAGE = 'You can say tell me a space fact, or, you can say exit... What can I help you with?';
+// const HELP_REPROMPT = 'What can I help you with?';
+// const STOP_MESSAGE = 'Goodbye!';
+// const REPROMPT = ' Would you like to hear another fact?';
 
-const data = [
-  'A year on Mercury is just 88 days long.',
-  'Despite being farther from the Sun, Venus experiences higher temperatures than Mercury.',
-  'Venus rotates counter-clockwise, possibly because of a collision in the past with an asteroid.',
-  'On Mars, the Sun appears about half the size as it does on Earth.',
-  'Earth is the only planet not named after a god.',
-  'Jupiter has the shortest day of all the planets.',
-  'The Milky Way galaxy will collide with the Andromeda Galaxy in about 5 billion years.',
-  'The Sun contains 99.86% of the mass in the Solar System.',
-  'The Sun is an almost perfect sphere.',
-  'A total solar eclipse can happen once every 1 to 2 years. This makes them a rare event.',
-  'Saturn radiates two and a half times more energy into space than it receives from the sun.',
-  'The temperature inside the Sun can reach 15 million degrees Celsius.',
-  'The Moon is moving approximately 3.8 cm away from our planet every year.',
-];
+// const data = [
+//   'A year on Mercury is just 88 days long.',
+//   'Despite being farther from the Sun, Venus experiences higher temperatures than Mercury.',
+//   'Venus rotates counter-clockwise, possibly because of a collision in the past with an asteroid.',
+//   'On Mars, the Sun appears about half the size as it does on Earth.',
+//   'Earth is the only planet not named after a god.',
+//   'Jupiter has the shortest day of all the planets.',
+//   'The Milky Way galaxy will collide with the Andromeda Galaxy in about 5 billion years.',
+//   'The Sun contains 99.86% of the mass in the Solar System.',
+//   'The Sun is an almost perfect sphere.',
+//   'A total solar eclipse can happen once every 1 to 2 years. This makes them a rare event.',
+//   'Saturn radiates two and a half times more energy into space than it receives from the sun.',
+//   'The temperature inside the Sun can reach 15 million degrees Celsius.',
+//   'The Moon is moving approximately 3.8 cm away from our planet every year.',
+// ];
 
 const skillBuilder = Alexa.SkillBuilders.standard();
 

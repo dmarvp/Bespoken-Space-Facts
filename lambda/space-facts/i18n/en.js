@@ -1,25 +1,26 @@
 module.exports = {
   translation: {
-    "SKILL_NAME": "Weltraum-Fakten",
-    "GET_FACT_MESSAGE": "Hier ist deine Tatsache: ",
-    "HELP_MESSAGE": "Sie können sagen, sagen Sie mir ein Leerzeichen oder, Sie können sagen, Ausfahrt ... Womit kann ich Ihnen helfen?",
-    "HELP_REPROMPT": "Womit kann ich dir helfen?",
-    "STOP_MESSAGE": "Auf Wiedersehen!",
-    "REPROMPT": " Möchten Sie eine andere Tatsache hören?",
+    "SKILL_NAME": "Space Facts",
+    "GET_FACT_MESSAGE": "Here's your fact: ",
+    "HELP_MESSAGE": "You can say tell me a space fact, or, you can say exit... What can I help you with?",
+    "HELP_REPROMPT": "What can I help you with?",
+    "STOP_MESSAGE": "Goodbye!",
+    "REPROMPT": " Would you like to hear another fact?",
+    "ERROR_MESSAGE": "Sorry, an error occurred.",
     "data": [
-      "Ein Mercury-Jahr dauert nur 88 Tage.",
-      "Obwohl die Venus weiter von der Sonne entfernt ist, hat sie höhere Temperaturen als Merkur.",
-      "Venus dreht sich gegen den Uhrzeigersinn, möglicherweise wegen einer Kollision in der Vergangenheit mit einem Asteroiden.",
-      "Auf dem Mars erscheint die Sonne ungefähr halb so groß wie auf der Erde.",
-      "Die Erde ist der einzige Planet, der nicht nach einem Gott benannt ist.",
-      "Jupiter hat den kürzesten Tag aller Planeten.",
-      "Die Milchstraße wird in etwa 5 Milliarden Jahren mit der Andromeda-Galaxie kollidieren.",
-      "Die Sonne enthält 99,86% der Masse im Sonnensystem.",
-      "Die Sonne ist eine fast perfekte Kugel.",
-      "Eine totale Sonnenfinsternis kann alle 1 bis 2 Jahre eintreten. Dies macht sie zu einem seltenen Ereignis.",
-      "Saturn strahlt zweieinhalb Mal mehr Energie in den Weltraum, als er von der Sonne erhält.",
-      "Die Temperatur in der Sonne kann 15 Millionen Grad Celsius erreichen.",
-      "Der Mond bewegt sich jedes Jahr ungefähr 3,8 cm von unserem Planeten entfernt."
+      "A year on Mercury is just 88 days long.",
+      "Despite being farther from the Sun, Venus experiences higher temperatures than Mercury.",
+      "Venus rotates counter-clockwise, possibly because of a collision in the past with an asteroid.",
+      "On Mars, the Sun appears about half the size as it does on Earth.",
+      "Earth is the only planet not named after a god.",
+      "Jupiter has the shortest day of all the planets.",
+      "The Milky Way galaxy will collide with the Andromeda Galaxy in about 5 billion years.",
+      "The Sun contains 99.86%% of the mass in the Solar System.",
+      "The Sun is an almost perfect sphere.",
+      "A total solar eclipse can happen once every 1 to 2 years. This makes them a rare event.",
+      "Saturn radiates two and a half times more energy into space than it receives from the sun.",
+      "The temperature inside the Sun can reach 15 million degrees Celsius.",
+      "The Moon is moving approximately 3.8 cm away from our planet every year."
     ]
   }
 }

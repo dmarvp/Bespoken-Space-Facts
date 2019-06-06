@@ -1,5 +1,4 @@
-
-#ask specifics
 .ask
 hooks
 test_output
+*.log
