@@ -13,7 +13,7 @@ configuration:
 
 ---
 - test: Launch and ask about Mars
-- GetNewFactIntent solarSystemMember=Mars: Mars
+- GetNewFactIntent solarSystemMember=marsName: marsName
 
 ---
 - test:  Launch and test multiple responses

@@ -1,0 +1,18 @@
+launchRequestTest: Launch the space facts skill
+marsTest: Launch and ask about Mars
+multipleTest:  Launch and test multiple responses
+cardTest: Launch and test card title and reprompt
+helpTest: Launch and ask for help
+
+hereIsYourFact: Hier ist deine Tatsache: *
+helpPrompt: helfen*
+spaceCardTitle: Weltraum-Fakten
+anotherFact: Möchten Sie eine andere Tatsache hören?
+earthName: Erde
+marsName: Mars
+venusName: Venus
+jupiterName: Jupiter
+saturnName: Saturn
+sunName: Sonne
+moonName: Mond
+mercuryName: Mercury
