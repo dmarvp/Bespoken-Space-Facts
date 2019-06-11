@@ -1,8 +1,3 @@
 {
-    "handler": "../../lambda/space-facts/index.js",
-    "jest": {
-        "reporters": [
-            "jest-allresult-csv-reporter"
-        ]
-    }
+    "handler": "../../lambda/space-facts/index.js"
 }
