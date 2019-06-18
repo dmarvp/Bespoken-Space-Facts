@@ -1,3 +1,4 @@
 {
-    "handler": "../../lambda/space-facts/index.js"
+    "handler": "../../lambda/space-facts/index.js",
+    "filter": "filters/resetModules"
 }
