@@ -3,7 +3,7 @@ configuration:
     locales: en-US, es-ES, de-DE
     
 ---
-- test: Launch the space facts skill
+- test: launchRequestTest
 - LaunchRequest: hereIsYourFact
 
 ---

@@ -17,7 +17,6 @@ module.exports = {
       "Die Milchstraße wird in etwa 5 Milliarden Jahren mit der Andromeda-Galaxie kollidieren.",
       "Die Sonne enthält 99,86%% der Masse im Sonnensystem.",
       "Die Sonne ist eine fast perfekte Kugel.",
-      "Eine totale Sonnenfinsternis kann alle 1 bis 2 Jahre eintreten. Dies macht sie zu einem seltenen Ereignis.",
       "Saturn strahlt zweieinhalb Mal mehr Energie in den Weltraum, als er von der Sonne erhält.",
       "Die Temperatur in der Sonne kann 15 Millionen Grad Celsius erreichen.",
       "Der Mond bewegt sich jedes Jahr ungefähr 3,8 cm von unserem Planeten entfernt."

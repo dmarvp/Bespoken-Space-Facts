@@ -1,4 +1,4 @@
-launchRequestTest: Launch the space facts skill
+launchRequestTest: Launch the Space Facts skill
 marsTest: Launch and ask about Mars
 multipleTest:  Launch and test multiple responses
 cardTest: Launch and test card title and reprompt

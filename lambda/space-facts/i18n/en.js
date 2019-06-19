@@ -17,7 +17,6 @@ module.exports = {
       "The Milky Way galaxy will collide with the Andromeda Galaxy in about 5 billion years.",
       "The Sun contains 99.86%% of the mass in the Solar System.",
       "The Sun is an almost perfect sphere.",
-      "A total solar eclipse can happen once every 1 to 2 years. This makes them a rare event.",
       "Saturn radiates two and a half times more energy into space than it receives from the sun.",
       "The temperature inside the Sun can reach 15 million degrees Celsius.",
       "The Moon is moving approximately 3.8 cm away from our planet every year."

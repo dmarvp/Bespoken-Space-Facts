@@ -17,7 +17,6 @@ module.exports = {
       "La Vía Láctea colisionará con la galaxia Andromeda dentro de 5 mil millones de años aproximadamente.",
       "El Sol contiene 99.86%% de la masa presente en el Sistema Solar.",
       "El Sol es una esfera casi perfecta.",
-      "Un eclipse total de sol puede pasar una vez cada uno o dos años. Esto los convierte en eventos raros.",
       "Saturno irradia dos veces y media más energía en el espacio que la que recibe del Sol.",
       "La temperatura dentro del Sol puede llegar a 15 millones de grados Celsius.",
       "La Luna se aleja de nuestro planeta 3.8 centímetros cada año."
