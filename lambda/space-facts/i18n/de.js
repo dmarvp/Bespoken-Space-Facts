@@ -14,7 +14,6 @@ module.exports = {
       "Auf dem Mars erscheint die Sonne ungefähr halb so groß wie auf der Erde.",
       "Die Erde ist der einzige Planet, der nicht nach einem Gott benannt ist.",
       "Jupiter hat den kürzesten Tag aller Planeten.",
-      "Die Milchstraße wird in etwa 5 Milliarden Jahren mit der Andromeda-Galaxie kollidieren.",
       "Die Sonne enthält 99,86%% der Masse im Sonnensystem.",
       "Die Sonne ist eine fast perfekte Kugel.",
       "Saturn strahlt zweieinhalb Mal mehr Energie in den Weltraum, als er von der Sonne erhält.",
