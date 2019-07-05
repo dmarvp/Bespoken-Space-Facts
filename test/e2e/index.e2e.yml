@@ -1,33 +1,35 @@
 ---
 configuration:
-    locales: en-US
-
+    locales: en-US, es-ES, de-DE
 ---
-- test: Launch the space facts skill
-- open space facts: "Here's your fact *"
+- test.only: launchRequestTest
+- openSpaceFacts: hereIsYourFact
 
 ---
 - test: Launch and ask for help
-- open space facts
-- help: "What can I help you with"
+- openSpaceFacts
+- help: helpPrompt
 
 ---
 - test: Launch and ask for a fact about Mars
-- ask space facts to tell me a fact about Mars: Mars
+- openSpaceFacts
+- askAboutMars: marsName
 
 ---
 - test: Launch the space facts skill and test multiple responses
-- open space facts:
+- openSpaceFacts:
   - prompt:
-    - Earth
-    - Venus
-    - Mars
-    - Sun
-    - Moon
+    - marsName
+    - earthName
+    - venusName
+    - jupiterName
+    - saturnName
+    - sunName
+    - moonName
     
 
 ---
 - test: Launch card title and reprompt
-- open space facts:
-  - cardTitle: Space Facts
-  - response.reprompt.outputSpeech.ssml: "Would you like to hear another fact?"
+- openSpaceFacts:
+  - cardTitle: spaceCardTitle
+  - response.reprompt.outputSpeech.ssml: anotherFact

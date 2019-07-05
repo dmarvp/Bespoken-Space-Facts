@@ -1,35 +1,35 @@
 ---
 configuration:
     description: My first test suite
-    locales: en-US, es-ES, de-DE
+    locales: en-US, es-ES, de-DE 
     
 ---
 - test: Launch the space facts skill
-- LaunchRequest: "Here's your fact: *"
+- LaunchRequest: hereIsYourFact
 
 ---
 - test: Launch and ask for help
 - LaunchRequest
-- AMAZON.HelpIntent: "help *"
+- AMAZON.HelpIntent: helpPrompt
 
 ---
 - test: Launch and ask about Mars
-- GetNewFactIntent solarSystemMember=Mars: Mars
+- GetNewFactIntent solarSystemMember=marsName: marsName
 
 ---
 - test:  Launch and test multiple responses
 - LaunchRequest:
   - prompt:
-      - Mars
-      - Earth
-      - Venus
-      - Jupiter
-      - Saturn
-      - Sun
-      - Moon
+      - marsName
+      - earthName
+      - venusName
+      - jupiterName
+      - saturnName
+      - sunName
+      - moonName
 
 ---
 - test: Launch and test card title and reprompt
 - LaunchRequest:
-  - cardTitle: Space Facts
-  - response.reprompt.outputSpeech.ssml: "Would you like to hear another fact?"
+  - cardTitle: spaceCardTitle
+  - response.reprompt.outputSpeech.ssml: anotherFact
