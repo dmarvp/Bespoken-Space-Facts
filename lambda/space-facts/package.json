@@ -15,7 +15,7 @@
   "license": "Apache-2.0",
   "dependencies": {
     "ask-sdk": "^2.0.0",
-    "i18next": "^17.0.1",
+    "i18next": "^26.3.4",
     "i18next-sprintf-postprocessor": "^0.2.2",
     "jest-allresult-csv-reporter": "^1.0.0"
   }
